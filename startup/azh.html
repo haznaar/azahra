@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- divinectorweb.com -->
+<head>
+    <meta charset="UTF-8">
+    <title>AlumnITy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        section {
+            border-bottom: 1px solid #ddd; /* Add border style */
+            padding-bottom: 20px; /* Add some padding for better visual separation */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h5>Azz<span>AH</span><span id="newspan">ratech</span></h5>
+            </div>
+            <ul class="menu">
+                
+                <li><a href="#about">Home</a></li>
+                <li><a href="#course">About</a></li>
+                <li><a href="#portfolio">Services</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+            <div class="bar">
+                <div class="bar-1"></div>
+                <div class="bar-2"></div>
+                <div class="bar-3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" style="background-color: rgb(235, 227, 227);">
+        <div class="banner">
+            <div class="wrapper">
+                <div class="content">
+                    <h2>AzzAHratech</h2>
+                    <p>Crafting Exceptional Websites</p>
+                    <a href="#course">Learn More</a>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="course" id="course">
+        <h1>ABOUT</h1>
+        <p>Crafting digital brilliance, one pixel at a time.</p>
+        <div class="row">
+            <div class="column">
+                <h3>Mission</h3>
+                <p>Our mission at AzzAHratech is simple: to empower businesses of all sizes with powerful web solutions that drive growth and success. We believe that every business deserves a unique online presence that reflects its brand identity and values. Through our tailored services and creative approach, we aim to exceed your expectations and deliver results that speak for themselves.</p>
+            </div>
+            <div class="column">
+                <h3>AzzAHratech</h3>
+                <p>We are more than just a web development startup – we are creators, innovators, and problem solvers. With a passion for crafting exceptional digital experiences, we specialize in web development, graphic design, and everything in between. Our team is driven by the desire to turn your ideas into reality and help your business stand out in the digital landscape. <br></p>
+            </div>
+            <div class="column">
+                <h3>What Sets Us Apart</h3>
+                <p>We understand that the digital world is constantly evolving. That's why we stay ahead of the curve, continuously learning and adapting to new technologies and trends. With a focus on innovation and excellence, we strive to push boundaries and deliver solutions that are not only visually stunning but also functional and user-friendly..</p>
+            </div>
+        </div>
+
+    </section>
+
+<section class="portfolio" id="portfolio">
+    <h1>SERVICES</h1>
+    <div class="wrapper">
+        <div class="box">
+            <img src="az5.jpeg" alt="">
+            <div class="img-text">
+                <div class="content">
+                    <h2>WEBSITE DESIGN AND DEVELOPMENT</h2>
+                </div>
+            </div>
+        </div>
+        
+        <div class="box">
+            <img src="az5.jpeg" alt="">
+            <div class="img-text">
+                <div class="content">
+                    <h2>RESPONSIVE SITES</h2>
+                </div>
+            </div>
+        </div>
+        
+        <div class="box">
+            <img src="az5.jpeg" alt="">
+            <div class="img-text">
+                <div class="content">
+                    <h2>WEBSITE HOSTING AND DOMAIN REGISTRATION</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="az5.jpeg" alt="">
+            <div class="img-text">
+                <div class="content">
+                    <h2>UI/UX DESIGN</h2>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+</section>
+
+
+<section class="engage" id="engage">
+    <h1>Why US??</h1>
+    <div class="row">
+        <div class="column">
+            <h3>Creativity</h3>
+            <p>We thrive on creativity and innovation, approaching every project with fresh ideas and originality.</p>
+        </div>
+        <div class="column">
+            <h3>Collaboration</h3>
+            <p>We believe in the power of collaboration and work closely with our clients to ensure their vision is brought to life</p>
+        </div>
+        <div class="column">
+            <h3>Quality</h3>
+            <p> We are committed to delivering high-quality work that exceeds expectations and drives tangible results for your business.</p>
+        </div>
+    </div>
+</section>
+
+
+
+
+    <section class="footer" id="footer">
+        <h4>Contact Us</h4>
+        <h5>azahratech@gmail.com</h5>
+        <h5>+91 79948 45856</h5>
+        <p>We provide you with the best facilities to achieve your goals</p>
+        <div class="icon">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+    </section>
+
+   
+
+    <script>
+        const sidenav = () => {
+            const menu = document.querySelector('.bar');
+            const nav = document.querySelector('.menu');
+
+            menu.addEventListener('click', () => {
+                menu.classList.toggle('bar-active');
+                nav.classList.toggle('nav-active');
+            });
+        }
+        sidenav();
+
+        // Sample data for achievements (replace with dynamic data from your database)
+        const achievementsData = [
+            { title: 'Outstanding Entrepreneur', description: 'Founded a successful startup', year: 2023 },
+            { title: 'Innovator of the Year', description: 'Contributed to groundbreaking research', year: 2022 },
+            { title: 'Community Leader', description: 'Initiated and led community service projects', year: 2021 },
+        ];
+
+        // Function to create achievement cards
+        function createAchievementCard(achievement) {
+            const card = document.createElement('div');
+            card.classList.add('achievement-card');
+            card.innerHTML = `
+                <h3>${achievement.title}</h3>
+                <p>${achievement.description}</p>
+                <p class="year">${achievement.year}</p>
+            `;
+            return card;
+        }
+
+        // Add achievement cards to the container
+        const achievementContainer = document.querySelector('.achievement-container');
+        achievementsData.forEach((achievement) => {
+            const card = createAchievementCard(achievement);
+            achievementContainer.appendChild(card);
+        });
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const scrollToSection = (sectionId) => {
+                const section = document.getElementById(sectionId);
+                section.scrollIntoView({ behavior: "smooth" });
+            }
+
+            const menuLinks = document.querySelectorAll('.menu a');
+
+            menuLinks.forEach(link => {
+                link.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    const sectionId = link.getAttribute('href').substring(1); // Remove the '#'
+                    scrollToSection(sectionId);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
